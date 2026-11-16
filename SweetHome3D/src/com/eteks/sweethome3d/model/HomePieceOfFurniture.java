@@ -587,6 +587,10 @@ public class HomePieceOfFurniture extends HomeObject implements PieceOfFurniture
       throw new IllegalStateException("Piece isn't resizable");
     }
   }
+    /**
+     * Returns the volume of this piece of furniture
+     */
+    public float getVolume() { return getDepth() * getHeight() * getWidth(); }
 
   /**
    * Returns the elevation of the bottom of this piece of furniture on its level. 
